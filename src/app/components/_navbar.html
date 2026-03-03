@@ -1,37 +1,4 @@
-<nav class="bg-slate-900 text-white shadow-lg sticky top-0 z-50" role="navigation" aria-label="Main Navigation">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16">
-      <!-- Logo / Brand -->
-      <div class="flex-shrink-0">
-        <a [routerLink]="['/']" class="text-xl font-bold text-blue-400 hover:text-blue-300 transition-colors" aria-label="Home">
-          DevPortfolio
-        </a>
-      </div>
-
-      <!-- Desktop Navigation Links -->
-      <div class="hidden md:block">
-        <div class="ml-10 flex items-baseline space-x-4">
-          @for (link of navLinks; track link.path) &#123;
-            <a
-              [routerLink]="[link.path]"
-              routerLinkActive="bg-blue-600 text-white"
-              [routerLinkActiveOptions]="&#123; exact: link.path === '/' &#125;"
-              class="px-3 py-2 rounded-md text-sm font-medium hover:bg-slate-700 hover:text-white transition-colors flex items-center gap-2"
-              [attr.aria-label]="link.label"
-            >
-              <i [class]="'pi ' + link.icon"></i>
-              {{ link.label }}
-            </a>
-          &#125;
-        </div>
-      </div>
-
-      <!-- Mobile Menu Button (Placeholder for full implementation) -->
-      <div class="-mr-2 flex md:hidden">
-        <button type="button" class="text-slate-300 hover:text-white p-2 focus:outline-none" aria-label="Open main menu">
-          <i class="pi pi-bars text-xl"></i>
-        </button>
-      </div>
-    </div>
-  </div>
-</nav>
+<div class="p-4 p-py-8">
+  <h1 class="text-3xl font-bold">{{ title || 'navbar' }}</h1>
+  <p class="mt-4 text-slate-600">Conteúdo em construção...</p>
+</div>
