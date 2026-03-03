@@ -1,25 +1,27 @@
 # dev-portfolio-8597
 
-## 🎯 Objetivo do Projeto
+## 🎯 Project Objective
 A modern landing page for a developer
 
-## 🧠 Project Memory (Contexto para a IA)
-Este arquivo serve como a memória central do projeto. **Sempre que você (IA) adicionar uma nova rota, serviço ou alterar a arquitetura principal, você DEVE atualizar este arquivo.**
+## 🧠 Project Memory (Context for the AI)
+This file serves as the project's central memory. **Whenever you (AI) add a new route, service, or change the main architecture, you MUST update this file.**
 
-### 🛠️ Stack Tecnológica
+### 🛠️ Tech Stack
 - Framework: AnalogJS v1.0 + Angular 18+
 - Backend: API Routes (h3) + Prisma ORM (SQLite)
-- Roteamento: File-based routing (src/app/pages)
-- Estilização: Tailwind CSS 3
-- Arquitetura: Standalone Components, Signals, Control Flow (@if, @for)
+- Routing: File-based routing (src/app/pages)
+- Styling: Tailwind CSS 3
+- Architecture: Standalone Components, Signals, Control Flow (@if, @for)
 
-### 📂 Páginas e Rotas Atuais
+### 📂 Current Pages and Routes
 - `home`
 - `projects/[slug]`
 
+### 🧩 Shared Components
+- `NavbarComponent` (src/app/components/navbar.component.ts)
+- `FooterComponent` (src/app/components/footer.component.ts)
 
-
-### 📝 Regras do Projeto
-- Componentes devem usar `export default class`.
-- O HTML NUNCA deve ser misturado no TypeScript.
-- Todas as variáveis do template devem ser declaradas no .ts.
+### 📝 Project Rules
+- Components must use `export default class`.
+- HTML must NEVER be mixed in TypeScript.
+- All template variables must be declared in the .ts file.

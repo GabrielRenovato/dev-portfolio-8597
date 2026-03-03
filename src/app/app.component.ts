@@ -9,11 +9,11 @@ import FooterComponent from "./components/footer.component";
 	standalone: true,
 	imports: [RouterOutlet, NavbarComponent, FooterComponent],
 	template: `
-    <app-navbar></app-navbar>
-    <main class="min-h-screen">
-      <router-outlet></router-outlet>
-    </main>
-    <app-footer></app-footer>
-  `,
+	    <app-navbar></app-navbar>
+	    <main class="min-h-screen">
+	      <router-outlet></router-outlet>
+	    </main>
+	    <app-footer></app-footer>
+	  `,
 })
 export default class AppComponent {}
